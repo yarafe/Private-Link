@@ -23,13 +23,17 @@ Routing table for ProtectedSubnetA
 Routing table for ProtectedSubnetB
 
 
+![Private_link_integration](images/Azure_Private_link_Deployment_with_FGT.png)
+
 The traffic should be forwarded from client to FGT internal interface for traffice inspection. 
 After that FGT will send the traffic from internal interface to the private endpoint interface.
+
+![Traffic_Flow](images/Azure_Private_link_Deployment_with_FGT_Traffic_Flow.png)
 
 Private DNS integration with private endpoint is mandatory here. The clients should be able to resolve the server FQDN with the Private endpoint IP address.
 
 
-![FortiSandbox-VM azure design](images/Azure_Private_link_Deployment_with_FGT_Traffic_Flow.png)
+
 
 ## Deployment: Azure Portal
 
