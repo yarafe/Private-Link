@@ -29,7 +29,7 @@ After that FGT will send the traffic from internal interface to the private endp
 Private DNS integration with private endpoint is mandatory here. The clients should be able to resolve the server FQDN with the Private endpoint IP address.
 
 
-![FortiSandbox-VM azure design](images/fts-standalone.png)
+![FortiSandbox-VM azure design](images/Azure_Private_link_Deployment_with_FGT_Traffic_Flow.png)
 
 ## Deployment: Azure Portal
 
