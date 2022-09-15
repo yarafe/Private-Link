@@ -32,8 +32,10 @@ After that FGT will send the traffic from internal interface to the private endp
 
 Private DNS integration with private endpoint is mandatory here. The clients should be able to resolve the server FQDN with the Private endpoint IP address.
 
+You could also verify your private endpoint settings. You can check that the private link resource is linked to the correct service and the connection status is approved.
 
 
+![Private_Endpoint](images/Private_Endpoint.png)
 
 ## Deployment: Azure Portal
 
