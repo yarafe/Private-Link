@@ -10,17 +10,18 @@ This will allow FGT to inspect all traffic between client machines and Private e
 ## Design
 
 The ARM template will deploy here the following components:
+
 -1 Vnet with for subnets:
 -internal subnet for FGT internal interface 
-external subnet for FGT external interface
-ProtectedSubnetA where the private endpoint is located
-ProtectedSubnetB where the client windows machines can be deployed 
-Single FGT Vm with two interfaces which are located in internal and external subnets.
-1 public IP address attached to FGT external interface
-Private endpoint with interface linked to the selected resource (ex: SQL server)
-private DNS zone linked to Vnet
-Routing table for ProtectedSubnetA
-Routing table for ProtectedSubnetB
+-external subnet for FGT external interface
+-ProtectedSubnetA where the private endpoint is located
+-ProtectedSubnetB where the client windows machines can be deployed 
+-Single FGT Vm with two interfaces which are located in internal and external subnets.
+-1 public IP address attached to FGT external interface
+-Private endpoint with interface linked to the selected resource (ex: SQL server)
+-private DNS zone linked to Vnet
+-Routing table for ProtectedSubnetA
+-Routing table for ProtectedSubnetB
 
 
 ![Private_link_integration](images/Azure_Private_link_Deployment_with_FGT.png)
