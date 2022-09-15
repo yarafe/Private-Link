@@ -12,8 +12,8 @@ This will allow FGT to inspect all traffic between client machines and Private e
 The ARM template will deploy here the following components:
 
 - 1 Vnet with for subnets:
--  Internal subnet for FGT internal interface 
--  External subnet for FGT external interface
+--  Internal subnet for FGT internal interface 
+--  External subnet for FGT external interface
 -  ProtectedSubnetA where the private endpoint is located
 -  ProtectedSubnetB where the client windows machines can be deployed 
 
