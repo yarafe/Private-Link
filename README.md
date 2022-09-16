@@ -60,6 +60,12 @@ The screenshots below show how routing table looks like for private endpoint and
 
 ![RT_Clients](images/RT_Clients.png)
 
+Microsoft has announced recently about feature enhancement related to UDR support for private endpoint.There is no need now to use/32 prefix for the endpoint. 
+you can use wider prefix in the routing table for routes destined to private endpoints. This enhancement requires enable Private endpoints subnet property which is callled PrivateEndpointNetworkPolicies.
+
+![PrivateEndpointNetworkPolicies](images/PrivateEndpointNetworkPolicies.png)
+
+
 ## Deployment: Azure Portal
 
 Azure Portal Wizard:
