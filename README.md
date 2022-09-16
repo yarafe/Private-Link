@@ -49,7 +49,11 @@ You could also verify your private endpoint settings. You can check that the pri
 
 ![Private_Endpoint](images/Private_Endpoint.png)
 
+When the private endpoint is created , a route will be injected in the routing table to forward the traffic to the end point. We have overwrite this route to forward the traffic from the client to FGT first. You can check The effective routes on the client interface to see the valid routes.
 
+![Effective_Routes_Client](images/Effective_Routes_Client.png)
+
+The screenshots below show how routing table looks like for private endpoint and client subnets. Basically, all traffic should be forwarded to the FGT internal interface behalf the traffic within the same subnet.
 
 ![RT_Private_Endpoint](images/RT_Private_Endpoint.png)
 
