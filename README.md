@@ -49,6 +49,13 @@ You could also verify your private endpoint settings. You can check that the pri
 
 ![Private_Endpoint](images/Private_Endpoint.png)
 
+
+
+![RT_Private_Endpoint](images/RT_Private_Endpoint.png)
+
+
+![RT_Clients](images/RT_Clients.png)
+
 ## Deployment: Azure Portal
 
 Azure Portal Wizard:
