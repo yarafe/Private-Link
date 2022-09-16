@@ -98,7 +98,7 @@ The FortiGate VMs need a specific configuration to match the deployed environmen
 
 - [Default configuration using this template](doc/config-provisioning.md)
 
-Some additional DNS configuration is required on FGT if the client want to connect to private endpoint through IPsec tunnel. In this case FGT should work as DNS Forwarder. You can find [here](doc/FGT-DNS-Forwarder.md)  more detail.
+Some additional DNS configuration is required on FGT if the client wants to connect to private endpoint through IPsec tunnel. In this case FGT should work as DNS Forwarder. You can find [here](doc/FGT-DNS-Forwarder.md)  more detail.
 
 ### Fabric Connector
 
