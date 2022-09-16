@@ -38,6 +38,8 @@ Private DNS integration with private endpoint is mandatory here. The clients sho
 
 ![Private_Endpoint_DNS](images/Private_Endpoint_DNS_Record.png)
 
+There is a list of DNS zone names related to each resource/sub resource. Microsoft reommend to use that list for DNS zone integrated with the private endpoint.
+Please, check the link from [here](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns).
 
 You could also verify your private endpoint settings. You can check that the private link resource is linked to the correct service and the connection status is approved.
 
