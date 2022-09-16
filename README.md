@@ -2,10 +2,13 @@
 
 ## Introduction
 
-Private endpoint allow you to connect privaely and securely to azure PAAS service such as Azure Storage and Azure SQL database.
+Private endpoint allow you to connect privately and securely to azure PAAS service such as Azure Storage and Azure SQL database.
 Private endpoint will be linked to azure service. It uses interface with private IP address from your Vnet.
+
 We will interoduce here Fortient solution to integrate FGT with private endpoint. 
 This will allow FGT to inspect all traffic between client machines and Private endpoint.
+
+You can find more information about private endpoint properties and supported resources from [here](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview).
 
 ## Design
 
