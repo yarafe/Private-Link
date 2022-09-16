@@ -36,7 +36,11 @@ config system interface
     set allowaccess ping ssh https
   next
 end
+</code></pre>
 
+You need to add firewall policy to allow traffic flow between client and endpoint. You can also specify the source as your clients subnet and the destination as private endpoint subnet.
+
+<pre><code>
 config firewall policy
     edit 1
         set name "traffic_client_endpoint"
