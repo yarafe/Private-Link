@@ -36,4 +36,19 @@ config system interface
     set allowaccess ping ssh https
   next
 end
+
+config firewall policy
+    edit 1
+        set name "traffic_client_endpoint"
+        set uuid f55ecfa4-35b8-51ed-c699-dc4b27ae5f57
+        set srcintf "port2"
+        set dstintf "port2"
+        set action accept
+        set srcaddr "all"
+        set dstaddr "all"
+        set schedule "always"
+        set service "ALL"
+        set logtraffic all
+        set logtraffic-start enable
+
 </code></pre>
