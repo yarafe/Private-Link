@@ -67,6 +67,8 @@ you can use wider prefix in the routing table for routes destined to private end
 
 ![PrivateEndpointNetworkPolicies](images/PrivateEndpointNetworkPolicies.png)
 
+Microsoft recommends also to use always SNAT for the traffic destined to a private endpoint to ensure return traffic is honored. You can find [here](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview) UDR limitations.
+
 
 ## Deployment: Azure Portal
 
