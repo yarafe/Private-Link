@@ -35,7 +35,7 @@ After that FGT will send the traffic from internal interface to the private endp
 
 ![Traffic_Flow](images/Azure_Private_link_Deployment_with_FGT_Traffic_Flow.png)
 
-Private DNS integration with private endpoint is mandatory here. The clients should be able to resolve the server FQDN with the Private endpoint IP address.
+Private DNS integration with private endpoint is <b>mandatory</b> here. The clients should be able to resolve the server FQDN with the Private endpoint IP address.
 
 ![Private_DNS](images/Private_DNS_Zone.png)
 
@@ -63,7 +63,7 @@ The screenshots below show how routing table looks like for private endpoint and
 Microsoft has announced recently about feature enhancement related to UDR support for private endpoint.
 
 There is no need now to use/32 prefix for the endpoint. 
-you can use wider prefix in the routing table for routes destined to private endpoints. This enhancement requires enable Private endpoints subnet property which is callled PrivateEndpointNetworkPolicies.
+you can use wider prefix in the routing table for routes destined to private endpoints. This enhancement requires enable Private endpoints subnet property which is callled <b>PrivateEndpointNetworkPolicies</b>.
 
 ![PrivateEndpointNetworkPolicies](images/PrivateEndpointNetworkPolicies.png)
 
