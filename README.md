@@ -1,4 +1,4 @@
-# Private Endpoint integration with FGT
+# Private Link integration with FGT
 
 ## Introduction
 
