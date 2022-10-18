@@ -46,15 +46,15 @@ So, all the traffic targeted to the Private Endpoint interface will be routed th
 ## Changing DNS Server for IPSEC VPN client.
 1.	Go to VPN > IPSEC TUNNEL and edit your tunnel settings. Under DNS Server we can configure our port2 address:
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/IPSEC.png width="400"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/IPSEC.png width="400"/>
 
 2.	After connecting C2S tunnel we can check our DNS settings on the client by using nslookup. The first DNS server should be our Fortigates address. 
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/nslookup.png width="400"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/nslookup.png width="400"/>
 
 3.	We can check if we are able to resolve our storage accounts DNS name:
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/nslookup2.png width="400"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/nslookup2.png width="400"/>
 
 To use Fortigate as a DNS server for the machines inside ProtectedB network we need to change DNS configurations on those machines. Here is an example for my Windows VM. I’m using Fortigates port2 interface IP address as a DNS server.
 
