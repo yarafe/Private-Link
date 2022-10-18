@@ -10,16 +10,16 @@ A DNS Forwarder is a Virtual Machine running on the Virtual Network linked to th
 ## Design
 The following diagram illustrates my testing environment. My main task is to make sure that IPSEC VPN clients and virtual machines from ProtectedB network will be able to connect to my storage account through the Fortigate. Since my storage account is available through the PrivateEndpoint my clients has to be able to resolve pcstorage.privatelink.blob.core.windows.net to the ip address of my Private Endpoints interface (172.16.137.6). To do this my Fortigate need to be configured as a DNS Proxy.
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/topologia.png width="800"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/Azure_Private_link_Deployment_with_FGT_with_IPsec.png width="800"/>
 
 ## Pushing the traffic targeted to private endpoint through the Fortigate
 When you are configuring Private Endpoint there is a routing entry that will be injected into your routing table that look as follow.
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/routing.png width="800"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/Private_Endpoint_route_entry.png width="800"/>
 
 So, all the traffic targeted to the Private Endpoint interface will be routed through the next hop type which is “InterfaceEndpoint”. Since our task is to push all that traffic through the Fortigate we need to introduce additional routing entry that looks as follow.
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/routing2.png width="800"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/Private_Endpoint_route_entry_to_FGT.png width="800"/>
 
 ## Using Fortigate as a DNS Forwarder.
 1.	Under the System > Feature Visibility you need to enable DNS Database feature.
@@ -58,4 +58,4 @@ So, all the traffic targeted to the Private Endpoint interface will be routed th
 
 To use Fortigate as a DNS server for the machines inside ProtectedB network we need to change DNS configurations on those machines. Here is an example for my Windows VM. I’m using Fortigates port2 interface IP address as a DNS server.
 
-<img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/azureDNScustom.png width="400"/>
+<img src=https://github.com/yarafe/Private-Link/blob/main/images/azureDNScustom.png width="400"/>
