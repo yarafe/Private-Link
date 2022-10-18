@@ -27,7 +27,7 @@ So, all the traffic targeted to the Private Endpoint interface will be routed th
 
     Because my task was to use Fortigate as a DNS Forwarer for my “ProtectedB” networtk and for my VPN tunnel I had to add two following entries.
     
-    <img src=https://github.com/yarafe/Private-Link/tree/main/images/DNS1.png width="400"/>
+    <img src=https://github.com/yarafe/Private-Link/blob/main/images/DNS1.png width="400"/>
 
     First one is for my “ProtectedB” network that is connected to Fortigate via port2. I’m forwarding DNS queries to System DNS.
     
