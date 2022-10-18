@@ -31,15 +31,15 @@ So, all the traffic targeted to the Private Endpoint interface will be routed th
 
     First one is for my “ProtectedB” network that is connected to Fortigate via port2. I’m forwarding DNS queries to System DNS.
     
-    <img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/DNS2.png width="400"/>
+    <img src=https://github.com/yarafe/Private-Link/blob/main/images/DNS2.png width="400"/>
 
     The second one is for my IPSECVPN interface
 
-    <img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/DNS3.png width="400"/>
+    <img src=https://github.com/yarafe/Private-Link/blob/main/images/DNS3.png width="400"/>
 
 3.	Finally, because we want to forward DNS queries to the System DNS we need to check Network > DNS configuration. By default, Fortigate will be using FortiGuard DNS servers. We need to change it to internal Azure DNS server which is listening on 168.63.129.16.
 	
-    <img src=https://github.com/iemcloudteam/azure_paas_services_inspection/blob/8aa82bcd6ce72c1d66d9d851fdd277cff6d1c456/images/DNS4.png width="400"/>
+    <img src=https://github.com/yarafe/Private-Link/blob/main/images/DNS4.png width="400"/>
     
  More information about using FortiGate as a DNS Proxy can be foud [here](https://docs.fortinet.com/document/fortigate/6.2.10/cookbook/121810/using-a-fortigate-as-a-dns-server)
 
